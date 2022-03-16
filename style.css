@@ -3,3 +3,10 @@
   
   
 }
+.kontener {
+  width: 1000px;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
