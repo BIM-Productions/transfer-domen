@@ -1,3 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> BIM Productions</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+      <link
+      rel="stylesheet"
+      href="/style.css"
+    />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      .mySlides {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    
+
+
 <h1>
   Twój Kawałek w naszej wytwórni!
 </h1>
@@ -10,11 +42,12 @@
           <input type="text" maxlength="15" placeholder="Jak masz na imię?" id="imie" name="imie">
           <label for="email">E-mail</label>
           <input type="email" name="email" placeholder="Podaj nam swój adres e-mail" id="email">
-          <input type="nazwa utworu" name="Nazwa utworu">
+          <input type="nazwa utworu" name="Nazwa utworu" placeholder="Nazwa ">
           <input type="Wykonawcy" name="Wykonawcy">
           <input type="Album" name="Album">
-          
-          <textarea rows="200" name="uwagi" placeholder="Twoje uwagi"></textarea>
+          <input type="file" name="Zdjęcie albumu">
+
+          <textarea rows="200" name="uwagi" placeholder="Tekst"></textarea>
           <input type="submit" id="btnSubmit" value="Prześlij">
         </fieldset>
       </form>
