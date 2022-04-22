@@ -82,6 +82,14 @@ label {
 }
 .aktualnosci{
   
-  background-color: 
+ /* background-color: 
  #000000
 }
+  
+  */
+.bg-color-akt{
+  background-color:  #ffffff
+}
+  .link{
+    background-color: #000000
+  }
