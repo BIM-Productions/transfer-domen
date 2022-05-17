@@ -55,7 +55,6 @@
           class="w3-bar-item w3-button w3-padding-large w3-hide-small"
           >twój utwór</a
         >
-        
 
         <div class="w3-dropdown-hover w3-hide-small">
           <img
@@ -139,145 +138,259 @@
         id="band"
       >
         <div class="aktualnosci">
-          
-        
-        <h2 class="w3-wide">AKTUALNOŚCI</h2>
-        <p class="w3-opacity"><i>Najnowsze aktualności</i></p>
-      
-           <div class="bg-color-akt">
-             
-          </div>
-              <div class="aktualnoci-background">
-                
-                Najnowszy utwór:</div> <i class="xd">Nie poddawaj sie</i>
-        
-          
+          <h2 class="w3-wide">AKTUALNOŚCI</h2>
+          <p class="w3-opacity"><i>Najnowsze aktualności</i></p>
+
+          <div class="bg-color-akt"></div>
+          <div class="aktualnoci-background">Najnowszy utwór:</div>
+          <i class="xd">Nie poddawaj sie</i>
         </div>
-        
-        <br>
-             <br>
-        
-             <br>
-        
-             <br>
-             <br>
-             <br>
-             <br>
-             <br>
-        
-        
-     
+        <style>
+          body {
+            font-family: "Lato", sans-serif;
+          }
 
-      <!-- The Tour Section -->
-      <div class="w3-black" id="tour">
-        <div
-          class="w3-container w3-content w3-padding-64"
-          style="max-width: 800px"
-        >
-          <h2 class="w3-wide w3-center">POSUCHAJ</h2>
-          <p class="w3-opacity w3-center">
-            <i>Naszej Muzyki</i>
-          </p>
-          <br />
+          h1,
+          h2,
+          h3,
+          a,
+          form,
+          input {
+            font-family: "Kanit", sans-serif;
+          }
 
-          <ul class="w3-ul w3-border w3-white w3-text-grey">
-            <li class="w3-padding">
-              Johniak- Kim chcę być? feat. Andrzej Roztromiak
-              <a href="https://youtu.be/8uDOA5W65Bw"
-                ><span class="w3-tag w3-red w3-margin-left">Posłuchaj</span></a
-              >
-              <a href="tracki/Johhniak/Kim-chce-byc.html"
-                ><span class="w3-tag w3-red w3-margin-left">Oceń</span></a
-              >
-            </li>
-            <li class="w3-padding">
+          #nawigacja {
+            width: 100%;
+            padding: 0px;
+            background: #0f2027; /* fallback for old browsers */
+            background: -webkit-linear-gradient(
+              to bottom,
+              #2c5364,
+              #203a43,
+              #0f2027
+            ); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(
+              to bottom,
+              #2c5364,
+              #203a43,
+              #0f2027
+            ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            position: sticky;
+            top: 0px;
+            z-index: 5;
+          }
+
+          #nawigacja li {
+            padding: 30px;
+            display: inline-block;
+          }
+
+          li a {
+            font-size: 25px;
+            text-decoration: none;
+            color: white;
+            letter-spacing: 0.3px;
+          }
+
+          #baner {
+            width: 100%;
+            height: 800px;
+            margin-bottom: 100px;
+            background-image: url("https://cdn.glitch.me/cdcf6cbd-6f72-427f-bcc4-6dc32a944c6c%2Frsz_1tlo.jpg?v=1636543842113");
+            background-size: cover;
+            background-attachment: fixed;
+          }
+
+          #baner h2 {
+            width: 800px;
+            font-size: 25px;
+            color: white;
+            position: relative;
+            top: 100px;
+            left: 100px;
+          }
+
+          span {
+            font-family: "Caveat", cursive;
+          }
+
+          .kontener {
+            width: 1000px;
+            padding: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+          }
+
+          h1 {
+            text-align: center;
+          }
+
+          p {
+            margin-bottom: 20px;
+          }
+
+          .zdj-galeria {
+            width: 100%;
+          }
+        </style>
+        <script>
+        let numerZdjecia = 0;
+slajder();
+
+function slajder(){
+  let obrazki = document.getElementsByClassName("zdj-galeria");
+  
+  for(let i = 0; i < obrazki.length; i++){
+    obrazki[i].style.display = "none";
+  }
+  
+  obrazki[numerZdjecia].style.display = "block";
+  
+  numerZdjecia++; //numerZdjecia = numerZdjecia + 1
+  
+  if(numerZdjecia == obrazki.length){
+    numerZdjecia = 0;
+  }
+  
+  setTimeout(slajder, 1000);
+}
+        </script>
+        <div class="kontener">
+<a href = "https://youtu.be/8uDOA5W65Bw" class="zdj-galeria">
+          <img src="https://cdn.glitch.global/c258f347-60ac-496c-8a2f-faab05d1456b/WhatsApp%20Image%202022-03-16%20at%2016.02.09.jpeg?v=1647442900599">
+          </a>
+          
+          <a href = "https://youtu.be/GC_a04tlx9Q" class="zdj-galeria">
+          <img src="https://cdn.glitch.global/c258f347-60ac-496c-8a2f-faab05d1456b/Przechwytywanie.PNG?v=1649523104916">
+          </a>
+          
+          <a href = "https://youtu.be/9M6xpwsZQEk" class="zdj-galeria">
+          <img src="https://cdn.glitch.global/c258f347-60ac-496c-8a2f-faab05d1456b/WhatsApp%20Image%202022-03-16%20at%2016.02.09.jpeg?v=1647442900599">
+          </a>
+          
+          <a href = "" class="zdj-galeria">
+          <img src="https://cdn.glitch.global/c258f347-60ac-496c-8a2f-faab05d1456b/Przechwytywanie.PNG?v=1649523104916">
+          </a>
+        </div>
+
+        <!-- The Tour Section -->
+        <div class="w3-black" id="tour">
+          <div
+            class="w3-container w3-content w3-padding-64"
+            style="max-width: 800px"
+          >
+            <h2 class="w3-wide w3-center">POSUCHAJ</h2>
+            <p class="w3-opacity w3-center">
+              <i>Naszej Muzyki</i>
+            </p>
+            <br />
+
+            <ul class="w3-ul w3-border w3-white w3-text-grey">
+              <li class="w3-padding">
+                Johniak- Kim chcę być? feat. Andrzej Roztromiak
+                <a href="https://youtu.be/8uDOA5W65Bw"
+                  ><span class="w3-tag w3-red w3-margin-left"
+                    >Posłuchaj</span
+                  ></a
+                >
+                <a href="tracki/Johhniak/Kim-chce-byc.html"
+                  ><span class="w3-tag w3-red w3-margin-left">Oceń</span></a
+                >
+              </li>
+              
+              
+              <li class="w3-padding">
                 Andzej Roztromiak HPK na sygnale
-              <a href="https://youtu.be/GC_a04tlx9Q"
-                ><span class="w3-tag w3-red w3-margin-left">Posłuchaj</span></a
-              >
-              <a href="tracki/Andzej-Roztromiak/hpk-na-sygnale.html"
-                ><span class="w3-tag w3-red w3-margin-left">Oceń</span></a
-              >
-            </li>
-            <li class="w3-padding">
-            
-               Gwiazda osiedla
-              <a href="https://youtu.be/9M6xpwsZQEk"
-                ><span class="w3-tag w3-red w3-margin-left">Posłuchaj</span></a
-              >
-              <a href="tracki/Johhniak/gąłąb.html"
-                ><span class="w3-tag w3-red w3-margin-left">Oceń</span></a
-              >
-            
-            </li>
-            
-                <li class="w3-padding">
-            
-               Nie poddawaj się!
-              <a href="https://youtu.be/cOoenPf3PdQ"
-                ><span class="w3-tag w3-red w3-margin-left">Posłuchaj</span></a
-              >
-              <a href="tracki/Johhniak/gąłąb.html"
-                ><span class="w3-tag w3-red w3-margin-left">Oceń</span></a
-              >
-            
-            </li>
-            
-            
-          </ul>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img
-            src="/w3images/sanfran.jpg"
-            alt="San Francisco"
-            style="width: 100%"
-            class="w3-hover-opacity"
-          />
-        </div>
-      </div>
-    </div>
+                <a href="https://youtu.be/GC_a04tlx9Q"
+                  ><span class="w3-tag w3-red w3-margin-left"
+                    >Posłuchaj</span
+                  ></a
+                >
+                <a href="tracki/Andzej-Roztromiak/hpk-na-sygnale.html"
+                  ><span class="w3-tag w3-red w3-margin-left">Oceń</span></a
+                >
+                
+                
+              </li>
+              <li class="w3-padding">
+                Gwiazda osiedla
+                <a href="https://youtu.be/9M6xpwsZQEk"
+                  ><span class="w3-tag w3-red w3-margin-left"
+                    >Posłuchaj</span
+                  ></a
+                >
+                <a href="tracki/Johhniak/gąłąb.html"
+                  ><span class="w3-tag w3-red w3-margin-left">Oceń</span></a
+                >
+              </li>
 
-    <!-- The Contact Section -->
-    <div
-      class="w3-container w3-content w3-padding-64"
-      style="max-width: 800px"
-      id="contact"
-    >
-      <h2 class="w3-wide w3-center">KONTAKT</h2>
-      <p class="w3-opacity w3-center">
-        <i>Chcesz się z nami skontaktować zrób to w formularzu poniżej</i>
-      </p>
-      <div class="kontener" id="kontakt">
-        <form action="https://formsubmit.co/maks2010@op.pl" method="POST">
-          <fieldset>
-            <label for="imie">Imię</label>
-            <input
-              type="text"
-              maxlength="15"
-              placeholder="Jak masz na imię?"
-              id="imie"
-              name="imie"
+              <li class="w3-padding">
+                Nie poddawaj się!
+                <a href="https://youtu.be/cOoenPf3PdQ"
+                  ><span class="w3-tag w3-red w3-margin-left"
+                    >Posłuchaj</span
+                  ></a
+                >
+                <a href="tracki/Johhniak/gąłąb.html"
+                  ><span class="w3-tag w3-red w3-margin-left">Oceń</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img
+              src="/w3images/sanfran.jpg"
+              alt="San Francisco"
+              style="width: 100%"
+              class="w3-hover-opacity"
             />
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Podaj nam swój adres e-mail"
-              id="email"
-            />
-            <textarea
-              rows="10"
-              name="uwagi"
-              placeholder="Twoje uwagi"
-            ></textarea>
-            <input type="submit" id="btnSubmit" value="Prześlij" />
-          </fieldset>
-        </form>
+          </div>
+        </div>
       </div>
-      <div class="w3-row w3-padding-32">
-        <div class="w3-col m6 w3-large w3-margin-bottom">
-          <i class="fa fa-envelope" style="width: 30px"> </i> Email:
-          maks2010@op.pl<br />
+
+      <!-- The Contact Section -->
+      <div
+        class="w3-container w3-content w3-padding-64"
+        style="max-width: 800px"
+        id="contact"
+      >
+        <h2 class="w3-wide w3-center">KONTAKT</h2>
+        <p class="w3-opacity w3-center">
+          <i>Chcesz się z nami skontaktować zrób to w formularzu poniżej</i>
+        </p>
+        <div class="kontener" id="kontakt">
+          <form action="https://formsubmit.co/maks2010@op.pl" method="POST">
+            <fieldset>
+              <label for="imie">Imię</label>
+              <input
+                type="text"
+                maxlength="15"
+                placeholder="Jak masz na imię?"
+                id="imie"
+                name="imie"
+              />
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Podaj nam swój adres e-mail"
+                id="email"
+              />
+              <textarea
+                rows="10"
+                name="uwagi"
+                placeholder="Twoje uwagi"
+              ></textarea>
+              <input type="submit" id="btnSubmit" value="Prześlij" />
+            </fieldset>
+          </form>
+        </div>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-envelope" style="width: 30px"> </i> Email:
+            maks2010@op.pl<br />
+          </div>
         </div>
       </div>
     </div>
