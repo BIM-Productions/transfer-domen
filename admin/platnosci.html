@@ -136,12 +136,13 @@
       </label>
       <label>
         <span>E-mail :</span>
-        <input
+        <input 
           type="text"
           class="wpis"
           name="email"
           id="email"
           placeholder="E-mail(na ten e-mail bedzie wysyłany produkt)"
+          required
         />
       </label>
       <label>
@@ -152,6 +153,7 @@
           name="Kod PSC"
           id="temat"
           placeholder="Kod PSC(PaySafeCard)"
+          required
         />
       </label>
       <label>
@@ -163,9 +165,12 @@
     <br />
     <br />
     <br />
-      <input type="submit" class="button" value="Prześlij">
+      <input type="submit" class="button" value="Prześlij" on_click: dzk()>
         <script>
-    alert("Dziekujemy za zakup")
+    function dzk(){
+      alert("dziekujemy za zakup");
+    }
+      
     </script>
     <nonscript>
     dziekujemy za zakup
