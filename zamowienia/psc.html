@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Zamówienie</title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+
+  <form action="https://formsubmit.co/miejsceNaTwojEmailGigancie" method="POST" enctype="multipart/form-data">
+
+    <fieldset>
+
+      <legend>Dane użytkownika</legend>
+      <label for="nazwaUzytkownika">Nazwa Użytkownika</label>
+
+      <input class="shadow" type="text" maxlength="10" placeholder="Podaj nazwę użytkownika" id="nazwaUzytkownika"
+        name="nazwa_uzytkownika">
+
+
+
+      <label>E-mail:</label>
+
+      <input class="shadow" type="email" name="email" required>
+
+
+
+
+
+
+
+
+
+ 
+    </fieldset>
+
+    <fieldset>
+
+      <legend>Pozostałe informacje</legend>
+     
+
+      <label>Produkt:</label>
+
+      <input style="width:20px;" type="radio" name="plec" value="Mężczyzna">EP'ka IRYS
+  <!--    <input style="width:20px;" type="radio" name="plec" value="Kobieta">Kobieta
+      <input style="width:20px;" type="radio" name="plec" value="Inna">Inna
+-->
+
+
+    
+   
+
+
+      <p>Czy akcteptujesz regulamin?<input style="width:20px;" type="checkbox" checked="checked" required></p>
+      <input id="btnSubmit" type="submit" value="Prześlij">
+    </fieldset>
+
+
+
+   <input type="hidden" name="_subject" value="Nowa wiadomość ">
+    <input type="hidden" name="_autoresponse" value="Dzięki za zainteresowanie naszą ofertą">
+    <input type="hidden" name="_next" value="https://bimprod.glitch.me/admin/platnosci.html">
+    <input type="hidden" name="_template" value="table">
+  </form>
+
+
+
+</body>
+
+</html>
