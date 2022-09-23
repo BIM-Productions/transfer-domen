@@ -1,66 +1,36 @@
-<html>
-<head>
-    <style>
-  input[type=text] {
-  border: 2px solid orange;
-  border-radius: 4px;
-  size: 200%
-  .button1 {background-color: #fe7f00 ;} 
-  .button1 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-  </style>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-2">
-<script language= "javascript" type= "text/javascript">
-<!-- ukrycie przed przeglądarkami nie obsługującymi javascriptów
-var users = new array("prezenty bim", "user2", "user3");
-
-function sprawdz_haslo(user, pass)
-{  
-  for(var i = 0; i < users.length; i++){
-    if((user == users[i]) && (pass == passwords[i]))
-      return true;
-  }
-  return false;
-}
-function check()
-{
-  var user = document.form1.user.value;
-  var pass = document.form1.pass.value;
-  if(!sprawdz_haslo(user, pass)){
-      alert('niepoprawne hasło!');
-  }
-  else{
-    document.location.href = "https://soundcloud.com/bim-productions-430052650/sets/dodatkowe-utwory-epka-irys/s-zVCzFKoYlJy?si=82f4326ce6cc4d8db2e01a28bce1b22c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
-  }
-}
-// koniec kodu javascript -->
-</script>
-</head>
-<body>
 <center>
-<h2>wprowadź Kod</h2>
-<form name = "form1">
-<table><tr>
-<td bordercolor="#ffffff">Kod:</td>
-<td bordercolor="#ffffff">
-  <input type="text" name="user">
-</td>
-
-<td colspan="2" align="center" bordercolor="#ffffff">
-  <if>user == "prezenty bim"</if>
-    <a href="https://soundcloud.com/bim-productions-430052650/sets/dodatkowe-utwory-epka-irys/s-zVCzFKoYlJy?si=82f4326ce6cc4d8db2e01a28bce1b22c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Prezent</a>
-  
-</td>
-</tr></table>
+<form>
+  <input type="text" id="kod_do_wpisania" name="kod_do_wpisania" value="">
+  <input type="button" id="cos" value="Odbierz nagrode"onClick="moveToPage()">
 </form>
 </center>
-</body>
-</html>
+<script>
+  function moveToPage(){
+    let fieldValue = document.getElementById("kod_do_wpisania").value;
+    if(fieldValue === "prezenty bim")
+    {
+      window.location = 'index.html';
+    }
+    else;{
+      
+    }
+}
+</script>
+
+<style>
+input[type=text] {
+    border: 2px solid orange;
+    border-radius: 4px;
+}
+</style>
+<style>
+  input[type=button]{
+    
+    background-color: #ff9900;
+  }
+</style>
+
+<!--
+
+ {background-color: #ff9900;}
+-->
