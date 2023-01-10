@@ -2,7 +2,7 @@
 </script>
 
 <script>
-function(){
+function send(){
   Email.send({
     Host : "smtp.elasticemail.com",
     Username : "BIM Productions",
@@ -10,7 +10,7 @@ function(){
     To : 'blctoblc223@gmail.com',
     From : "zamowienia@bimprod.glitch.me",
     Subject : "to temat",
-    Body : "And this is the body"
+    Body : "tresc"
 }).then(
   message => alert(message)
 );
@@ -18,6 +18,6 @@ function(){
 </script>
 
 
-<button onclick="">
-  
+<button onclick="send()">
+  KLIKAJ
 </button>
