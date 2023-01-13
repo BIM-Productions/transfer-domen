@@ -3,20 +3,24 @@
 
 <script>
 function send(){
-  Email.send({
+let mail = document.get.Element.By.Id("mail")  
+Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "BIM Productions",
-    Password : "password",
-    To : 'blctoblc223@gmail.com',
-    From : "zamowienia@bimprod.glitch.me",
-    Subject : "to temat",
-    Body : "tresc"
+    Username : "bimproductionsmusic@gmail.com",
+    Password : "0800D036FA3D0DAE9483460C715E04233DD3",
+    To : mail,
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
 }).then(
   message => alert(message)
 );
-}
 </script>
 
+<form >
+  <input type="email" id="mail">
+  <input type="submit" onclick="send()">
+</form>
 
 <button onclick="send()">
   KLIKAJ
