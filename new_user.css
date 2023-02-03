@@ -1,0 +1,31 @@
+.pricelist {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.price-item {
+  width: 30%;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 80%;
+  padding: 10px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
