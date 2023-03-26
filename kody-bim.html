@@ -1,32 +1,45 @@
-<center>
-<form>
-  <input type="text" id="kod_do_wpisania" name="kod_do_wpisania" value="">
-  <input type="button" id="cos" value="Odbierz nagrode"onClick="moveToPage()">
-</form>
-</center>
-<script>
-  function moveToPage(){
-    let fieldValue = document.getElementById("kod_do_wpisania").value;
-    if(fieldValue === "prezenty bim")
-    {
-      window.location = 'https://soundcloud.com/bim-productions-430052650/sets/dodatkowe-utwory-epka-irys/s-zVCzFKoYlJy?si=29fdc71a891b488b971e061cbe08a662&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing';
-    else if:fieldValue != "prezenty bim" {
-      alert("zle")
-    }
-    }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enter passcode</title>
+  </head>
+  <body>
+    <center>
+    <label for="passcode">Wprowadź kod</label>
+    <input type="text" id="passcode" />
+    <button onclick="checkPasscode()">Submit</button>
+    </center>
+    <script>
+      function checkPasscode() {
+        const passcodeInput = document.getElementById("passcode");
+        const passcode = passcodeInput.value;
 
-}
-</script>
+        if (passcode === "prezent od bim") {
+          window.location.href = "https://soundcloud.com/bim-productions-430052650/sets/dodatkowe-utwory-epka-irys/s-zVCzFKoYlJy?si=ae986b7ba02c493e84885b186ff38152&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing";
+        } else {
+          alert("Niepoprawny kod.");
+          passcodeInput.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>
 
 <style>
-input[type=text] {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  input[type="text"] {
     border: 2px solid orange;
     border-radius: 4px;
-}
+  }
 </style>
 <style>
-  input[type=button]{
-    
+  button {
     background-color: #ff9900;
   }
 </style>
