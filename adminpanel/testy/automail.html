@@ -1,16 +1,36 @@
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
 
+<script>const nodemailer = require('nodemailer');</script>
 <script>
 function send(){
-Email.send({
-    SecureToken : "b33ea4a2-84cd-4d1f-b422-e73f2a7a15e1",
-    To : 'kontoblc@gmail.com',
-    From : "blctoblc223@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
+
+// create reusable transporter object using the default SMTP transport
+let transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+        user: 'bimproductionsmusic@gmail.com',
+        pass: 'Pro100docelu'
+    }
+});
+
+// setup email data
+let mailOptions = {
+    from: 'bimproductionsmusic@gmail.com',
+    to: 'blctoblc223@gmail.com',
+    subject: 'Hello',
+    text: 'Hello world!'
+};
+
+// send mail with defined transport object
+transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+        console.log(error);
+    } else {
+        console.log('Email sent: ' + info.response);
+    }
+});
+
 );
 </script>
 
