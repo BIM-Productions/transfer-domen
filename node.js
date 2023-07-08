@@ -1,0 +1,26 @@
+const { CourierClient } = require("@trycourier/courier");
+
+const courier = CourierClient({ authorizationToken: "<auth_token>" });
+
+async function sendSMS() {
+    const { requestId } = await courier.send({
+        message: {
+            to: {
+                phone_number: "+48506280290",
+            },
+            content: {
+                title: "Welcome!",
+                body: "Thanks for signing up, {{name}}",
+            },
+            data: {
+                name: "BIM Prod",
+            },
+            routing: {
+                method: "single",
+                channels: ["sms"],
+            },
+            },
+    });
+}
+
+sendSMS();
